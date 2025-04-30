@@ -4,14 +4,27 @@
   padding-top: 18px;
   background-color: white;
   border-radius: 8px;
+  min-width: 300px;
   /*
     HACK: Margin on an outer bound like this is
     a little gross, but we haven't seen the tools
     to deal with it yet!
   */
+  white-space: nowrap;
+  overflow-x: scroll;
   margin-bottom: 32px;
+  isolation: isolate;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.controlPane::-webkit-scrollbar {
+  display: none;
 }
 
+/* Hide scrollbar for IE, Edge and Firefox */
+.controlPane {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 .title {
   margin: 0;
   /* Optical centering */
@@ -23,4 +36,10 @@
   font-size: 0.875rem;
   font-weight: 400;
   color: hsl(0deg, 0%, 30%);
+}
+@media screen and (max-width: 896px) {
+  .title {
+    position: sticky;
+    left: 0px;
+  }
 }
