@@ -3,15 +3,14 @@
   padding-bottom: 64px;
 }
 .backgroundDecorative {
-  height: 60vh;
-  min-width: 100vw;
-  top: 45%;
+  height: 40%;
+  width: 100%;
+  top: 60%;
   background-color: hsl(195deg, 20%, 86%);
   position: fixed;
-  isolation: isolate;
 }
 .maxWidthWrapper {
-  max-width: 1024px;
+  position: relative;
 }
 
 .header {
@@ -33,12 +32,11 @@
 }
 
 .characterWrapper {
-  min-height: 500px;
-  min-width: 450px;
-
   position: fixed;
-  top: 128px;
-  right: 200px;
+  top: 15%;
+  left: 60%;
+  min-height: 500px;
+  bottom: 5%;
 }
 
 .controlColumn {
